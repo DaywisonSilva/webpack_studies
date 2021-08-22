@@ -1,8 +1,5 @@
-import { debounce } from './utils'
-
-let myFn = debounce(() => {
-  console.log('olá')
-}, 500)
-
-
-window.addEventListener('resize', myFn)
+// import all .js, .css, .scss files here
+import 'bootstrap';
+import '../scss/styles.scss'
+import './modules/modA.js'
+import '../assets/img/nlw.jpg'
