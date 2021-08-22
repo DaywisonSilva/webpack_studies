@@ -2,10 +2,26 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/utils/debounce/index.js":
-/*!*************************************!*\
-  !*** ./src/utils/debounce/index.js ***!
-  \*************************************/
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/js/utils/index.js");
+
+var myFn = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.debounce)(function () {
+  console.log('olá');
+}, 500);
+window.addEventListener('resize', myFn);
+
+/***/ }),
+
+/***/ "./src/js/utils/debounce/index.js":
+/*!****************************************!*\
+  !*** ./src/js/utils/debounce/index.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -22,17 +38,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/utils/index.js":
-/*!****************************!*\
-  !*** ./src/utils/index.js ***!
-  \****************************/
+/***/ "./src/js/utils/index.js":
+/*!*******************************!*\
+  !*** ./src/js/utils/index.js ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "debounce": () => (/* reexport safe */ _debounce__WEBPACK_IMPORTED_MODULE_0__.default)
 /* harmony export */ });
-/* harmony import */ var _debounce__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./debounce */ "./src/utils/debounce/index.js");
+/* harmony import */ var _debounce__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./debounce */ "./src/js/utils/debounce/index.js");
 
 
 
@@ -101,12 +117,9 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/utils/index.js");
+/* harmony import */ var _js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js */ "./src/js/index.js");
+// import all .js files here
 
-var myFn = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.debounce)(function () {
-  console.log('olá');
-}, 500);
-window.addEventListener('resize', myFn);
 })();
 
 /******/ })()
